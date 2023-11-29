@@ -103,7 +103,7 @@ header{
 
 /* main */
 main{
-    padding: 0 60px;
+    padding: 0 60px 51px;
 }
 
 /* section01 */
@@ -249,4 +249,137 @@ main{
     font-weight: 400;
     line-height: 152.3%; /* 27.414px */
     letter-spacing: -0.18px;
+}
+
+
+/* burder-menu-wrap */
+.burder-menu-wrap h3{
+    color: #000;
+    font-family: Reem Kufi;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152.3%; /* 54.828px */
+    letter-spacing: -0.36px;
+}
+.burger-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 71px;
+}
+.burger-box{
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 68px 13px 28px 17px;
+}
+.burger-box:not(:last-child){
+    margin-right: 25px;
+}
+.burger-box:nth-child(1){
+    position: relative;   
+}
+.burger-box:nth-child(1)>img{
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.burger-box:nth-child(2){
+    position: relative;   
+}
+.burger-box:nth-child(2)>img{
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.burger-box:nth-child(3){
+    position: relative;   
+}
+.burger-box:nth-child(3)>img{
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.burger-box:nth-child(4){
+    position: relative;   
+}
+.burger-box:nth-child(4)>img{
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.burger-box>p:first-of-type{
+    color: #3D3D3D;
+    font-family: Reem Kufi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    margin-bottom: 8px;
+}
+.burger-box>p:last-of-type{
+    color: #3D3D3D;
+    font-family: Reem Kufi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152.3%; /* 21.322px */
+    letter-spacing: -0.14px;
+    margin-bottom: 14px;
+}
+.burger-star-wrap,
+.burger-score-box,
+.burger-price-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.burger-score-box{
+    margin-right: 34px;
+}
+.burger-score-box>p{
+    color: #3D3D3D;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152.3%; /* 36.552px */
+    letter-spacing: -0.24px;
+}
+.burger-price-box{
+    margin-left: auto;
+}
+.burger-price-box>p{
+    color: #FE554A;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.54px;
+    margin-right: 9px;
+}
+.burger-add{
+    position: relative;
+}
+.burger-add>p{
+    color: #fff;
+    z-index: 100;
+}
+.burger-add>p::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: #FE5F55;
+    border-radius: 50px;
+    z-index: 90;
 }
