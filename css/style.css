@@ -63,14 +63,16 @@ header{
     color: #AAACAE;
     background: transparent;
     border: transparent;
-
+    outline: none;
 }
 
 
 /* munu-btn */
 .munu-btn,
 .home-btn-box,
-.basket-btn-box{
+.home-btn-box>a,
+.basket-btn-box,
+.basket-btn-box>a{
     display: inline-block;
 }
 .home-btn-box{
@@ -213,6 +215,11 @@ main{
 .menu-box{
     padding: 22px 37px;
 }
+.menu-box>a>img{
+    margin: 0 auto;
+    width: 50px;
+    height: 48px;
+}
 .menu-box:nth-child(1){
     border: 1px solid #F0CAC1;
     border-radius: 50px;
@@ -352,6 +359,7 @@ main{
     align-items: center;
 }
 .burger-star-wrap{
+    justify-content: space-between;
     margin-bottom: 13px;
 }
 .burger-score-box{
@@ -369,9 +377,6 @@ main{
     line-height: 152.3%; /* 36.552px */
     letter-spacing: -0.24px;
 }
-.burger-price-box{
-
-}
 .burger-price-box>p{
     color: #FE554A;
     font-family: Roboto;
@@ -384,20 +389,23 @@ main{
 }
 .burger-add{
     position: relative;
-}
-.burger-add>p{
-    color: #fff;
-    z-index: 100;
-}
-.burger-add>p::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
     background: #FE5F55;
     border-radius: 50px;
-    z-index: 90;
+    z-index: 10;
+}
+.burger-add>p{
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -73%);
+    color: #fff;
+    text-align: center;
+    font-family: Reem Kufi;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -1.44px;
+    z-index: 20;
 }
